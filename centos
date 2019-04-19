@@ -1,0 +1,163 @@
+- Lệnh kiểm tra thông số Server
+
++ Kiểm tra CPU: 
+
+cat /proc/cpuinfo
+
++ Kiểm tra phiên bản nhân Linux:
+
+uname -a
+
++ Kiểm tra phiên bản hệ điều hành:
+
+cat /etc/redhat-release
+
++ Kiểm tra RAM:
+
+free -h
+
++ Kiểm tra HDD:
+
+df -h
+
+- Tập lệnh di chuyển
+
++ Di chuyển giữa các thư mục
+
+cd [another directory]
+
+VD: muốn di chuyển vào thư mục /etc/nginx/conf.d/
+cd /etc/nginx/conf.d/
+
++ Chuyển đến thư mục home của user
+
+cd ~
+
++ Chuyển đến thư mục trước đây
+
+cd -
+
++ Di chuyển đến thư mục cha
+
+cd ..
+
++ Hiển thị đường dẫn thư mục hiện tại
+
+pwd
+
++ Hiển thị tất cả file/thư mục ở thư mục hiện tại
+
+ls
+
++ Hiển thị tất cả file và thông tin
+
+ls -al
+
++ Hiển thị tất cả file với đuôi bất kỳ
+
+ls *.ext
+
+VD: Hiển thị tất cả các file php
+ls *.php
+
++ Hiển thị tất cả file/thư mục với thông tin chi tiết
+
+ls -alh
+
++ Tắt kết nối SSH
+
+exit
+
+- Quản lý File
+
++ Copy và đổi tên file
+
+cp [filename] [new filename]
+
+VD: copy banner.jpg vào folder ads và đổi tên thành banner728px.jpg
+cp banner.jpg ads/banner728px.jpg
+
++ Move và đổi tên file
+
+mv [old filename] [new filename]
+
+VD: di chuyển banner.jpg sang folder ads và đổi tên file thành banner728px.jpg
+mv banner.jpg ads/banner728px.jpg
+VD: chuyển folder image vào folder media
+mv image/ media
+VD: chuyển folder image ra thư mục cha
+mv image/ ..
+
++ Xóa một file
+
+rm [file name]
+
+VD: xóa file banner.jpg
+rm banner.jpg
+
++ Xóa toàn bộ file ở thư mục hiện tại
+
+rm *
+
++ Xóa toàn bộ file với extension bất kỳ
+
+rm *.ext
+
++ Copy một folder kèm theo toàn bộ files, thư mục bên trong
+
+cp -r [directory] [new directory]
+
++ Tạo thư mục mới
+
+mkdir [folder name]
+
++ Tạo file mới
+
+touch [flle name]
+
++ Tìm kiếm một file từ thư mục hiện tại
+
+find . -name [filename] -print
+
++ Tìm kiếm nội dung trong một file
+
+grep [text] [filename]
+
++ CHMOD – thay đổi file permission
+
+chmod [permission type] [file/folder name]
+
+VD: chmod 777 wp-config.php
+VD: chmod tất cả các thư mục trong html/site
+chmod -R 777 html/site
+
+- Nén và Giải nén file Zip
+
++ Kiểm tra server đã cài zip
+
+rpm -q zip
+
++ Cài đặt zip
+
+yum install zip -y
+
++ Tạo file nén .zip
+
+zip filename.zip filename1 filename2
+
+VD: nén toàn bộ file trong folder
+zip -r test.zip folder1
+
++ Giải nén file .zip
+
+unzip filename.zip
+
+- Lệnh cài đặt và setup server
+
++ 
+
+
+
+
+
+
